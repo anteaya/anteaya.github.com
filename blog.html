@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>blog</title>
+		<meta name="author" content="Anita Kuno" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+		<link rel="icon" href="images/favicon.png" />
+	</head>
+	<body>
+		<div class="site">
+			<div class="header">
+				<h3><img src="images/anteaya.png" /></h3>
+			</div>
+			<div class="navigation">
+				<ul>
+					<span class="left"><li><a href="http://github.com/anteaya"><img src="images/github.png" /></a></li></span>
+					<span class="right"><li><a href="http://twitter.com/anteaya"><img src="images/twitter.png" /></a></li></span>
+					<li><a href="mailto:ay.kuno@gmail.com"><img src="images/email.png" /></a></li>
+					<li><a href="creativeeveryday.html"><img src="images/creativeeveryday.png" /></a></li>
+					<li><a href="http://calendaraboutnothing.com/~anteaya">My Calendar About Nothing</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<p>Friend asks me to help him access a sqlite file since his MobileMe upgrade wiped out parts of his address book and he retrieved this file.</p>
+				<p>He emailed me the file and created a directory 'sqlite' and moved the file inside. I was in a terminal and moved into the 'sqlite' directory. Then I input <em>sqlite3 filename.sqlitedb</em> into the command line which dropped me into sqlite. At the sqlite prompt I input <em>.databases</em> expecting it to show me the database information but instead I got a 'file encrypted or corrupted error'. I exited from sqlite and input <em>strings filename.sqlitedb</em> in bash and recieved output some of which I could read. So that meant that the file was not encrypted, the file just was not an sqlite file (even though it had the .sqlitedb file extension). So I input <em>strings filename.sqlitedb > file.txt</em> and sent my friend the file.txt in an email.</p>
+				<p>He was very happy since this output was more accessible to him than the .sqlitedb file.</p>
+				<p>The End</p>
+			</div>
+		</div>
+	</body>
+</html>
+

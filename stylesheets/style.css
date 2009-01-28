@@ -1,0 +1,46 @@
+* {
+	font-family: sans-serif;
+}
+
+.site {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/sunrise_2.png) no-repeat;
+	width: 800px;
+	height: 550px;
+}
+
+img {
+	border: none;
+}
+
+.header img {
+	padding: 30px;
+	float: left;
+}
+
+.navigation {
+	padding-top: 20px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	padding-right: 30px;
+}
+
+.navigation a {
+	padding-left: 50px; 
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}

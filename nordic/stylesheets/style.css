@@ -1,0 +1,48 @@
+* {
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #90B5BC;
+}
+
+.site {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/skihaliburton_background.png) no-repeat;
+	width: 800px;
+	height: 550px;
+	text-align: center;
+}
+
+.title img {
+	padding: 25px 15px 15px 65px;
+}
+
+.insert {
+	width: 500px;
+	height: 380px;
+	margin-left: 175px;
+	margin-top: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigation {
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+.navigation img {
+	padding: 5px 10px;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: inline;
+}
