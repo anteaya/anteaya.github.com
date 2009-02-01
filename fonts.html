@@ -27,6 +27,24 @@
 		});
 		</script>
     <div id="dream_orphans"><h4>Here is a sentence with a kind of font.</h4></div>
+
+		 <script type="text/javascript">
+                var dream_orphans = {
+                src: 'http://www.fontburner.com/flash/dream_orphans.swf' };
+                sIFR.prefetch(dream_orphans);
+                sIFR.delayCSS  = true;
+                sIFR.activate(dream_orphans);
+                sIFR.replace(dream_orphans, {
+                selector: '#dream_orphans'
+                ,css: [
+                '.sIFR-root {color:#000000;}'
+                ,'a {color:#666666; text-decoration: none; }'
+                ,'a:link {color:#666666; text-decoration: none; }'
+                ,'a:hover {color:666666; }'
+                ]
+                });
+                </script>
+
     <p>Here is a sentence with a different font.</p>
     <p>I wonder what this sentence with look like with this font.</p>
     <p>My curiosity just goes on, and on and on.</p>
