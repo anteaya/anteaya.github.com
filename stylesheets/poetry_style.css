@@ -8,7 +8,7 @@ body {
 h1 {
 	font-size:	1.5em;	/* 27px */
 	line-height:	1em;	/* 27px */
-	margin: 	0 0 1em 9em;
+	margin: 	0 0 1em 0;
 }
 
 h2 {
@@ -23,7 +23,7 @@ p {
 	width:		31em;
 	font-size: 	1em;
 	line-height: 	1.5em;
-	margin:		0 0 1.5em 13.5em;
+	margin:		0 0 1.5em 0;
 }
 
 .sidenote {
