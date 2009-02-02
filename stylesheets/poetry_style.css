@@ -1,0 +1,27 @@
+body {
+	font-size: 12px;
+}
+
+h1 {
+	font-size:	1.5em;	/* 18px */
+	line-height:	1em;	/* 18px */
+	margin: 0 0 1em 0;
+}
+
+h2 {
+	font-size:	1.1667em;
+	line-height:	1.286em;
+	margin-top:	1.929em;
+	margin-bottom: 	0.643em;
+}
+
+p {
+	font-size: 	1em;	/* 12 px */
+	line-height: 	1.5em;	/* 18pt */
+	margin:		0 0 1.5em 0;
+}
+
+.sidenote {
+	font-size:	0.8333em;	/* 10px */
+	line-height: 	1.8em;		/* 18px */
+}
