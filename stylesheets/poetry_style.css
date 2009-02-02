@@ -16,8 +16,10 @@ h2 {
 }
 
 p {
-	font-size: 	1em;	/* 12 px */
-	line-height: 	1.5em;	/* 18pt */
+	height:		7em;	/* 84px */
+	width:		31em;	/* 372px */
+	font-size: 	1em;	/* 12px */
+	line-height: 	1.5em;	/* 18px */
 	margin:		0 0 1.5em 0;
 }
 
