@@ -25,6 +25,7 @@ p {
 }
 
 .sidenote {
-	font-size:	0.8333em;	/* 10px */
-	line-height: 	1.8em;		/* 18px */
+	font-size:	0.8333em;
+	line-height: 	1.8em;
+	float:		right;
 }
