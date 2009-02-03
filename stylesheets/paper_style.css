@@ -55,6 +55,6 @@ p {
 .line_2 {
 	font-size:      1.5em;  /* 27px */
         line-height:    1em;    /* 27px */
-	margin:         0 1.3333em 2 2.8889em;
+	margin:         0 1.3333em 2em 2.8889em;
         border-top:	0.2222em solid #323943;
 }
