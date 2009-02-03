@@ -11,7 +11,7 @@ h1 {
 	font-size:	1.5em;	/* 27px */
 	line-height:	1em;	/* 27px */
 	margin: 	0 0 1em 0;
-	border:		0 0 0.2222em 0 solid #6a321b; 
+	border-bottom:	0.2222em solid #6a321b; 
 }
 
 h2 {
