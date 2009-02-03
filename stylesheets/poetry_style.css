@@ -3,14 +3,15 @@ body {
 	font-family:		"Frutiger", "Univers", "Helvetica Neue", arial, helvetica, sans-serif;
 	width:			44em;
 	margin:			1.6667em 0 0 13.5em;
-	background-color:	#59493c;
-	color:			#dbc295;
+	background-color:	#181000;
+	color:			#f4f4f4;
 }
 
 h1 {
 	font-size:	1.5em;	/* 27px */
 	line-height:	1em;	/* 27px */
 	margin: 	0 0 1em 0;
+	border:		0 0 0.2222em 0 solid #6a321b; 
 }
 
 h2 {
