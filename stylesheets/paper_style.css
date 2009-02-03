@@ -39,6 +39,7 @@ p {
 .line_1 {
 	font-size:	1.5em; 	/* 27px */
 	line-height:	1em;	/* 27px */
+	margin:		0 1.5556em 0 1.5556em;
 	border-bottom:	0.2222em solid #ec889a;
 }
 
