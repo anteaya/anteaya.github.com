@@ -36,3 +36,9 @@ p {
 	float:		right;
 	width:		13.6005em;
 }
+
+.line {
+	font-size:      1.5em;  /* 27px */
+        line-height:    1em;    /* 27px */
+        border-top:	0.2222em solid #323943;
+}
