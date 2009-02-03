@@ -3,7 +3,7 @@ body {
 	font-family:		"Frutiger", "Univers", "Helvetica Neue", arial, helvetica, sans-serif;
 	width:			44em;
 	margin:			1.6667em 0 0 13.5em;
-	background-color:	#ad906c;
+	background-color:	#ad906c;	/* Pink Tulip Palette */
 	color:			#edeae7;
 }
 
@@ -37,7 +37,12 @@ p {
 	width:		13.6005em;
 }
 
-.line {
+.line_1 {
+	font-size:	1.5em; 	/* 27px */
+	line-height:	1em;	/* 27px */
+	border-bottom:	0.2222em solid #ec889a;
+
+.line_2 {
 	font-size:      1.5em;  /* 27px */
         line-height:    1em;    /* 27px */
 	margin:         0 0 1em 0;
