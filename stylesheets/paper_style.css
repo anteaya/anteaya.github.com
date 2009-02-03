@@ -7,14 +7,17 @@ body {
 	font-size:		18px;
 	font-family:		"Frutiger", "Univers", "Helvetica Neue", arial, helvetica, sans-serif;
 	background-color:	#d74870;
+	text-align:		center;
 }
 
 .main {
 	font-size:		1em;
 	width:			44em;
-	margin:			1.6667em 0 0 13.5em;
+	margin-left:		auto;
+	margin-right:		auto;
 	background-color:	#ad906c;	/* Pink Tulip Palette */
 	color:			#edeae7;
+	text-align:		left;
 }
 
 h1 {
