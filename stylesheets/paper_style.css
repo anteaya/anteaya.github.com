@@ -1,3 +1,8 @@
+p {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-size:		18px;
 	font-family:		"Frutiger", "Univers", "Helvetica Neue", arial, helvetica, sans-serif;
