@@ -62,6 +62,15 @@ p {
         border-top:	0.2222em solid #323943;
 }
 
+.vertical_line_1 {
+
+}
+
+.content {
+	font-size:	1em;
+	width:		32.3333em;
+}
+
 .right {
 	float: 		right;
 }
