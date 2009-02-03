@@ -8,11 +8,11 @@ body {
 }
 
 h1 {
-	font-size:	1.5em;	/* 27px */
-	line-height:	1em;	/* 27px */
+	font-size:	2.6667em;	/* 48px */
+	line-height:	1em;	/* 48px */
 	margin:		0;
 	padding:        0 0 0.6667em 2.3333em;
-        border-bottom:  0.2222em solid #ec889a;
+        border-bottom:  0.125em solid #ec889a;
 }
 
 h2 {
