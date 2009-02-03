@@ -11,7 +11,7 @@ h1 {
 	font-size:	1.5em;	/* 27px */
 	line-height:	1em;	/* 27px */
 	margin: 	0 0 1em 0;
-	padding:	0 0 0.6667em 0;
+	padding:	0 0 0.6667em 2.3333em;
 	border-bottom:	0.2222em solid #6a321b; 
 }
 
@@ -28,6 +28,7 @@ p {
 	font-size: 	1em;
 	line-height: 	1.5em;
 	margin:		0 0 1.5em 0;
+	padding:	
 }
 
 .sidenote {
