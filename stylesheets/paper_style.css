@@ -61,3 +61,12 @@ p {
 	margin:         0 1.3333em 2em 2.8889em;
         border-top:	0.2222em solid #323943;
 }
+
+.right {
+	float: 		right;
+}
+
+.bio {
+	font-size:	0.6667em;
+	line-height:	2.25em;
+}
