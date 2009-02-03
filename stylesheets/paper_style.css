@@ -65,7 +65,7 @@ p {
 .vertical_line_1 {
 	font-size:	1em;
 	width:		32.3333em;
-	margin-bottom:	2.3333em;
+	margin-bottom:	-2.3333em;
 	border-right:	0.3333em solid #323943;
 }
 
