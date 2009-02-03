@@ -1,0 +1,36 @@
+body {
+	font-size:		18px;
+	font-family:		"Frutiger", "Univers", "Helvetica Neue", arial, helvetica, sans-serif;
+	width:			44em;
+	margin:			1.6667em 0 0 13.5em;
+	background-color:	#59493c;
+	color:			#dbc295;
+}
+
+h1 {
+	font-size:	1.5em;	/* 27px */
+	line-height:	1em;	/* 27px */
+	margin: 	0 0 1em 0;
+}
+
+h2 {
+	font-size:	1.1667em;
+	line-height:	1.286em;
+	margin-top:	1.929em;
+	margin-bottom: 	0.643em;
+}
+
+p {
+	height:		4.6667em;
+	width:		28.3333em;
+	font-size: 	1em;
+	line-height: 	1.5em;
+	margin:		0 0 1.5em 0;
+}
+
+.sidenote {
+	font-size:	0.8333em;
+	line-height: 	1.8em;
+	float:		right;
+	width:		13.6005em;
+}
