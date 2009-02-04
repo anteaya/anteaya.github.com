@@ -1,0 +1,86 @@
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size:		18px;
+	font-family:		"Frutiger", "Univers", "Helvetica Neue", arial, helvetica, sans-serif;
+	background-color:	#d74870;
+	text-align:		center;
+}
+
+.main {
+	font-size:		1em;
+	width:			44em;
+	margin-left:		auto;
+	margin-right:		auto;
+	background-color:	#ad906c;	/* Pink Tulip Palette */
+	color:			#edeae7;
+	text-align:		left;
+}
+
+h1 {
+	font-size:	2.6667em;	/* 48px */
+	line-height:	1em;	/* 48px */
+	margin:		0;
+	padding:        1.625em 0 0.875em 3.5em;
+}
+
+h2 {
+	font-size:	1.1667em;
+	line-height:	1.286em;
+	margin-top:	1.929em;
+	margin-bottom: 	0.643em;
+}
+
+p {
+	width:		28.3333em;
+	font-size: 	1em;
+	line-height: 	1.5em;
+	padding:	0 0 2.6667em 2.3333em;
+}
+
+.sidenote {
+	font-size:	0.8333em;
+	line-height: 	1.8em;
+	float:		right;
+	width:		13.6005em;
+}
+
+.line_1 {
+	font-size:	1.5em; 	/* 27px */
+	line-height:	1em;	/* 27px */
+	margin:		0 1.5556em 0 1.5556em;
+	border-bottom:	0.2222em solid #ec889a;
+}
+
+.line_2 {
+	font-size:      1.5em;  /* 27px */
+        line-height:    1em;    /* 27px */
+	margin:         0 1.3333em 2em 2.8889em;
+        border-top:	0.2222em solid #323943;
+}
+
+.vertical_line_1 {
+	font-size:	1em;
+	width:		32.3333em;
+	margin-bottom:	2.3333em;
+	border-right:	0.3333em solid #323943;
+}
+
+.content {
+	font-size:	1em;
+	width:		32.3333em;
+	padding-bottom:	4.3333em;
+}
+
+.right {
+	float: 		right;
+}
+
+.bio {
+	font-size:	0.6667em;
+	line-height:	2.25em;
+	width:		10em;
+}
