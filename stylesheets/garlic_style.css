@@ -6,7 +6,7 @@ p {
 body {
 	font-size:		18px;
 	font-family:		"Frutiger", "Univers", "Helvetica Neue", arial, helvetica, sans-serif;
-	background-color:	#d74870;
+	background-color:	#3d0500;
 	text-align:		center;
 }
 
@@ -15,8 +15,8 @@ body {
 	width:			44em;
 	margin-left:		auto;
 	margin-right:		auto;
-	background-color:	#ad906c;	/* Pink Tulip Palette */
-	color:			#edeae7;
+	background-color:	#803732;	/* Garlic Half Bulb Palette */
+	color:			#f2f2eb;
 	text-align:		left;
 }
 
@@ -52,21 +52,21 @@ p {
 	font-size:	1.5em; 	/* 27px */
 	line-height:	1em;	/* 27px */
 	margin:		0 1.5556em 0 1.5556em;
-	border-bottom:	0.2222em solid #ec889a;
+	border-bottom:	0.2222em solid #8b5219;
 }
 
 .line_2 {
 	font-size:      1.5em;  /* 27px */
         line-height:    1em;    /* 27px */
 	margin:         0 1.3333em 2em 2.8889em;
-        border-top:	0.2222em solid #323943;
+        border-top:	0.2222em solid #b5866b;
 }
 
 .vertical_line_1 {
 	font-size:	1em;
 	width:		32.3333em;
 	margin-bottom:	2.3333em;
-	border-right:	0.3333em solid #323943;
+	border-right:	0.3333em solid #8b5219;
 }
 
 .content {
