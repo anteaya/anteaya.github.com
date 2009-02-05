@@ -41,6 +41,11 @@ p {
 	padding:	0 0 2.6667em 2.3333em;
 }
 
+a {
+	text-decoration: none;
+	color:		#dea23d;
+}
+
 .sidenote {
 	font-size:	0.8333em;
 	line-height: 	1.8em;
