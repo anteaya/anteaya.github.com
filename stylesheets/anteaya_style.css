@@ -23,6 +23,8 @@ body {
 	font-size:		1em;
 	width:			44em;
 	margin-bottom:		2.3333em;
+	margin-left:		auto;
+	margin-right:		auto;
 }
 
 .main {
