@@ -59,6 +59,32 @@ body {
 	overflow:		hidden;
 }
 
+.r1_w2 {
+	margin:			0 9px;
+	background-color:	#865d3a;
+}
+
+.r2_w2 {
+	margin:			0 5px;
+	background-color:	#865d3a;
+}
+
+.r3_w2 {
+	margin:			0 3px;
+	background-color:	#865d3a;
+}
+
+.r4_w2 {
+	margin:			0 2px;
+	background-color:	#865d3a;
+}
+
+.r5_w2 {
+	margin:			0 1px;
+	height:			2px;
+	background-color:	#865d3a;
+}
+
 .r1 {
 	margin:			0 9px;
 	background-color:	#a8433a;
