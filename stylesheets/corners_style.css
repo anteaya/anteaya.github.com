@@ -40,21 +40,26 @@ body {
 }
 
 .r1 {
-	margin:			0 5px;
+	margin:			0 7px;
 	background-color:	#803732;
 }
 
 .r2 {
-	margin:			0 3px;
+	margin:			0 5px;
 	background-color:	#803732;
 }
 
 .r3 {
-	margin:			0 2px;
+	margin:			0 3px;
 	background-color:	#803732;
 }
 
 .r4 {
+	margin:			0 2px;
+	background-color:	#803732;
+}
+
+.r5 {
 	margin:			0 1px;
 	height:			2px;
 	background-color:	#803732;
