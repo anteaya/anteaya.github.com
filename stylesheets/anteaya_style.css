@@ -66,6 +66,32 @@ body {
 	overflow:		hidden;
 }
 
+.r1_w3 {
+	margin:			0 9px;
+	background-color:	#570b0c;
+}
+
+.r2_w3 {
+	margin:			0 5px;
+	background-color:	#570b0c;
+}
+
+.r3_w3 {
+	margin:			0 3px;
+	background-color;	#570b0c;
+}
+
+.r4_w3 {
+	margin:			0 2px;
+	background-color:	#570b0c;
+}
+
+.r5_w3 {
+	margin:			0 1px;
+	height:			2px;
+	background-color:	#570b0c;
+}
+
 .r1_w2 {
 	margin:			0 9px;
 	background-color:	#865d3a;
