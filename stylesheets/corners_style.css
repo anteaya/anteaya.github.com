@@ -10,6 +10,14 @@ body {
 	text-align:		center;
 }
 
+.content {
+	font-size:		1em;
+	width:			44em;
+	margin-left:		auto;
+	margin-right:		auto;
+	text-align:		left;
+}
+
 .main {
 	font-size:		1em;
 	width:			44em;
