@@ -107,6 +107,11 @@ p {
         border-top:	0.2222em solid #b5866b;
 }
 
+.content_wrapper {
+	font-size:	1em;
+	padding-bottom:	4em;
+}
+
 .vertical_line_1 {
 	font-size:	1em;
 	width:		32.3333em;
@@ -116,7 +121,6 @@ p {
 .content {
 	font-size:	1em;
 	width:		32.3333em;
-	padding-bottom:	4em;
 }
 
 .right {
