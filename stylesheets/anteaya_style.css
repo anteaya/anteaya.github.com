@@ -10,6 +10,17 @@ body {
 	text-align:		center;
 }
 
+.wrapper_3 {
+	font-size:		1em;
+	width:			45.3333em;
+	margin-left:		auto;
+	margin-right:		auto;
+	text-align:		left;
+	padding-top:		0.3333em;
+	padding-bottom:		0.3333em;
+	background-color:	#570b0c;
+}
+
 .wrapper_2 {
 	font-size:		1em;
 	width:			44.6667em;
