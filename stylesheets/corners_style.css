@@ -30,6 +30,7 @@ body {
 
 .rtop, .rbottom {
 	display:		block;
+	background-color:	#803732;
 }
 
 .rtop *, .rbottom * {
