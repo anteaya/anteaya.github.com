@@ -171,6 +171,11 @@ ul {
 	line-height:		1.5em;
 }
 
+a {
+	text-decoration:	none;
+	color:			#321919;
+}
+
 p {
 	width:		28.3333em;
 	font-size: 	1em;
