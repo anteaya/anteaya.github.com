@@ -1,0 +1,32 @@
+body, .wrapper_3 {
+	background-color:	#a44c43;
+}
+
+.inside_wrapper_3, .wrapper_2, .r1_w3, .r2_w3, .r3_w3, .r4_w3, .r5_w3 {
+	background-color:	#642809;
+}
+
+.inside_wrapper_2, .r1_w2, .r2_w2, .r3_w2, .r4_w2, .r5_w2 {
+	background-color:	#cbca54;
+}
+
+.main, .r1, .r2, .r3, .r4, .r5 {
+	background-color:	#eaad91;	/* Cherry Blossom Palette */
+	color:			#230807;
+}
+
+a {
+	color:			#323208;
+}
+
+.line_1 {
+	border-bottom:	0.2222em solid #642c37;
+}
+
+.line_2 {
+        border-top:	0.2222em solid #a08e37;
+}
+
+.vertical_line_1 {
+	border-right:	0.3333em solid #642c37;
+}
