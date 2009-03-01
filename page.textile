@@ -6,7 +6,9 @@ p. True to form, I will try several things, commit often and evaluate the result
 
 &quot;I said, 'hold the mayo' twice!&quot;
 
+&lt;pre&gt;
 Roses are red,
 Violets are blue,
 I'd like a sandwich;
 Perhaps even two.
+&lt;/pre&gt;
