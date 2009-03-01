@@ -30,3 +30,8 @@ the line-through?
 
 He thought and thought ... and then thought some
 more.
+
+&quot;Four score and seven years ago our fathers
+brought forth...a new nation...dedicated to the
+proposition that all men are created
+equal....&quot;
