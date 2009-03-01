@@ -27,3 +27,6 @@ Please use the em dash closed--or open if you must
 So now that -I have- it has been
 established with the dashes what is with
 the line-through?
+
+He thought and thought ... and then thought some
+more.
