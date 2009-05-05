@@ -231,3 +231,7 @@ p {
 	margin-right:		3.5em;
 	margin-bottom:		1.75em;
 }
+
+.badge {
+	margin-left:		-0.3333em;
+}
