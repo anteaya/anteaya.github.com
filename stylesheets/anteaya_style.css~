@@ -233,5 +233,5 @@ p {
 }
 
 .badge {
-	margin-left:		-0.3333em;
+	margin-left:		-0.6667em;
 }

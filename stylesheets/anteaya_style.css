@@ -176,6 +176,10 @@ a {
 	color:			#321919;
 }
 
+img {
+	text-decoration:	none;
+}
+
 p {
 	width:		28.3333em;
 	font-size: 	1em;
