@@ -6,12 +6,10 @@
   <body>
   <h1>Look A Poem by Anita Kuno</h1>
   <div class="sidenote">A place for me to post my poetry whenever the muse whispers in my ear.
-    <ul>
-      <li><a href="../index.html">Home<a></li>
-      <li><a href="poetry.html">Twitter Poems</a></li>
-      <li><a href="look_another_poem.html">Look Another Poem</a></li>
-      <li><a href="and_another_poem.html">And Another Poem</a></li>
-    </ul>
+    <a href="../index.html">Home<a>
+    <a href="poetry.html">Twitter Poems</a>
+    <a href="look_another_poem.html">Look Another Poem</a>
+    <a href="and_another_poem.html">And Another Poem</a>
   </div>
     <p>I find my way by the light of your heart<br />
     heart candle<br />
