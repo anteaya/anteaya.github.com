@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Notes on My Version Control Talk from FutureRuby</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+     <link rel="stylesheet" href="stylesheets/anteaya_style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper_3">
+      <b class="rtop">
+        <b class="r1_w3"></b><b class="r2_w3"></b><b class="r3_w3"></b><b class="r4_w3"></b><b class="r5_w3"></b>
+      </b>
+	<div class="inside_wrapper_3">
+          <div class="wrapper_2">
+            <b class="rtop">
+              <b class="r1_w2"></b><b class="r2_w2"></b><b class="r3_w2"></b><b class="r4_w2"></b><b class="r5_w2"></b>
+            </b>
+            <div class="inside_wrapper_2">
+              <div class="wrapper_1">
+                <b class="rtop">
+                  <b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b><b class="r5"></b>
+                </b>
+                <div class="main">
+                  <h1>Notes on My Version Control Talk from FutureRuby</h1>
+                  <div class="line_1"></div>
+                  <div class="line_2"></div>
+                  <div class="right">
+                    <div class="bio">
+                    </div>
+                    <div class="badge">
+                      <a href="http://futureruby.com/"><img src="images/futureruby_badge_spk.png" alt="FutureRuby Speakers Badge" /></a>
+                    </div>
+                    <div class="links">
+                      <ul>
+                        <li><a href="http://anteaya.github.com">Home</a>
+			<li><a href="http://twitter.com/anteaya">Twitter</a></li>
+                        <li><a href="http://anteaya.github.com/poetry/poetry.html">My Writing</a></li>
+                        <li><a href="http://anteaya.github.com/garlic.html">Garlic Soup</a></li>
+                        <li><a href="http://gettingreal.37signals.com/ch08_Wordsmiths.php">Wordsmiths</a></li>
+                        <li><a href="mailto:ay.kuno@gmail.com">My Email</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="content_wrapper">
+                    <div class="vertical_line_1">
+                      <div class="content">
+
+<h2>Version Control: Blood Brain & Bones</h2>
+
+<p>I'd like to start my expressing my gratitude to Pete and Meghann. To Pete, for trusting me enough to give me the opportunity to share with you. To Meghann and her team of volunteers for making such a wonderful experience a reality once again. Thank you.</p>
+
+<h3>This is a nutrition talk. Why do you care?</h3>
+
+<p>Red Blood Cells, known as erythrocytes, carry oxygen to all the tissues of our bodies, including our brain cells. The brain is the largest consumer of oxygen in the body. In order to think, we need oxygen. Bones not only give structure to our tissues so that we may move around and do the things we wish to do but they also are the home to bone marrow. Bone marrow is the venue for erythrocytes to grow, mature and be released in the blood stream. Which as I said, is the tissue responsible for carrying oxygen.</p>
+
+<p>So what does this have to do with version control? While our identity may be consistent over a long period of time, our bodies are constantly undergoing a process which is often termed plasticity. Plasticity refers to the mechanism of altering structure or function to accomodate new environmental conditions. Our bodies are remarkably plastic in their structural expression. Our tissues are forming, maturing, performing the task for which they have been constructed and then being gathered, stored or recycled for the next instance for which they are required. Our tissues are extremely resiliant and accomodating to various envionmental conditions but there are some conditions that are optimal for their most effective construction and performance and that is what I would like to talk about this morning.</p>
+
+<p>So why versions? Some tissues can alter their structure while retaining the integrity of the cell so the cell continues to live. Nerve tissue would be an example. As far as I have been taught, the nerve cells we were born with are the nerve cells we retain now. Some cells lose the ability to change once they are mature so those cells have a finite lifespan and must die to facilite new cell growth. Red blood cells are an example. As mature cells they have lost their nucleus so they don't have the ability to divide. The nucleus takes up too much space in the mature red blood cell which must be able to navigate tiny capillaries while carrying its load of gas molecules, so the nucleus must go. Red blood cells have a maximum life span of 120 days, give or take, which is 4 months. Your body goes through 3 completely different versions of red blood cells in a year so factors that affect their structure and amount will influence subsequent releases.</p>
+
+<p>I figured that since I have studied this area for such a long time that there might be a few of you who would be interested in knowing what some of these factors that affect structure and function happen to be.</p>
+
+<h3>Red Blood Cells</h3>
+
+<p>So to start, Red Blood Cells. They form in the bone, they are released into the bloodstream, they do their job which is to carry gas molecules, they undergo apoptosis, which means 'programmed cell death', the parts are recycled and the process begins again. The formation of blood cells is called haematopoiesis and red blood cells are just one of the tissues that results from this process. Haematopoiesis takes place in the marrow of the bones. In adults the pelvis, sternum, vertebrae and cranium, which are considered flat bones, produce most of the red blood cells. Children create blood in the marrow of the femur and humerus, considered long bones, as well. Most people lose the blood making capacity of the long bones in adulthood.</p>
+
+<p>Haematopoiesis begins with undifferenciated haematopoietic stem cells. These cells can result in the creation of all of the tissues that comprise the blood but I am just going to talk about red blood cells, which are called erythrocytes. A substance called erythropoietin, formed in the renal cortex which is a layer of tissue in the kidneys, regulates the level of circulating red blood cells. It does so in two ways. Its presence is necessary to ensure that a cell in the differenciation process called a myeloid progenitor cell becomes a erythrocyte. If a different regulating substance is in the presence of the myeloid progenitor cell, it becomes a different kind of blood tissue instead of a red blood cell. This other tissue is necessary as well but it doesn't help with the transport of oxygen to the brain, which is what we are concerned with so we need the kidneys to make the erythropoietin so that the progenitor cell becomes a erythrocyte. Once the mature red blood cell is released, erythropoietin is required to maintain circulating levels of red blood cells. Erythropoietin keeps the red blood cells from undergoing apoptosis, or programmed death. So erythropoietin, made in the kidneys, ensures that cells become red blood cells and the red blood cells that you have stay alive.</p>
+
+<p>After a red blood cell undergoes apoptosis, the spleen breaks it down into parts retaining what is useful and sending the parts to be eliminated to the liver and kidneys. The majority of the parts to be eliminated, such as bilirubin, are excreted in the bile into the intestines joining the other body wastes to be eliminated.</p>
+
+<p>The popular theory of haematopoiesis is deterministic. It says that factors evaluate conditions and basically place an order of the cells that are required to be produced. Another theory is stochastic which means that cells are produced at random and the factor influence which cells get to survive.</p>
+
+<p>So what does this have to do with you? Well if you are aware of what actions influence the structure and amount of created red blood cells then your decisions play a role in the deployment of your red blood cells and its constant iterations. You are releasing about 2.5 million mature red blood cells every second. It takes approximately 10 days to 2 weeks for a haematopoietic stem cell to become a mature red blood cell. So the cells you are releasing right now are the result of 2 weeks worth of work in your bone marrow. So if you knew some of the nutrients that are important to the creation of healthy red blood cells and ensured they were included in your diet, you should see the results of your behaviour in about 2 weeks.</p>
+
+<p>So factors that influence the formation of red blood cells: iron, B vitamins, oxygen deprivation, erythropoietin.</p>
+
+<p>Sources of Iron include: eggs, fish & liver, green leafy vegetables, almonds, avocados, beets, blackstrap molasses, brewer's yeast, dates, dulse, kelp, beans, raisins and sesame seeds. </p>
+
+<p>Sources of B Vitamins include: brewer's yeast, avocados, broccoli, asparagus, beans, cheese, egg yolks, fish, meat, milk and poultry.</p>
+
+<p>Oxygen deprivation: holding your breath, singing, circular breathing and exercise sufficient to create an anaerobic condition, brisk walking can accomplish this.</p>
+
+<p>Erythropoietin production: healthy kidneys, which are assisted in staying healthy by drinking lots of water.</p>
+
+<h3>Brain</h3>
+
+<p> - nerve cells, bodies of which are all within the central nervous system
+		dendrites, axon</p>
+		
+<p>Nerve cells are formed during initial development of the fetus and while axons parts can to a certain extent seek itself out and effect repair, if severed the mechanism is weak and often results in a loss of connection. Whole nerve cells don't experience replacement like erythocytes, but they do experience plasticty. Since the bodies of the nerve cells reside in the central nervous system, which is comprised of the brain and spinal cord, the plasticity of the nervous system is most often located here. It is the dendrites, the information gathering branches of the nerve cell which are able to create new attachments with other nerve cells.</p>
+
+<p>Nerve cells are rather like trees with dentrites as branches and the axon as the trunk. The nucleus is in the middle part in the body of the nerve cell with dentrites leading to it and the axon leading away. Dendrites make connections with other nerve cells altering the level of stimulus that is required to get the nerve cell to fire and output its signal down its axon to the nerve cell dendrites which have connected to it.</p>
+
+<p>While nerve cells aren't replaced they do exhibit plasticity by forming new bridges with other nerve cells to increase the effectiveness of the conditions under which they fire. By a similar process, connections that are no longer carring useful information between nerve cells atrophy.</p>
+
+<p>There was an experiment done on monkeys which subjected the monkeys to identical stimuli but divided the monkeys into two groups based upon how they were rewarded. The monkeys had a sensory stimuli in the form of finger taps as well as being subjected to auditory stimuli. The sensory stimuli was extreme in the order of 100 minutes of finger tapping at a time. Half the monkeys were rewarded when they could distinguish differenced in the finger tapping stimulus and half the monkeys were rewarded when the could identify differences in the auditory signal. The brains of the monkeys were evaluated and the ones that were rewarded based on sensory stimuli had larger nerve formation in the area of the brain that co-responded to sensory stimuli. The brains of the monkeys that were rewarded for the auditory stimuli differences had larger nerve formation in the auditory area of the brain. In the area that recieved stimulation without reward, the tissue was unchanged based on the experiment. The conclusion of the experiment was the level of importance that is associated with the stimuli will have resultant effects on the brain regardless of the frequency and duration of the stimuli itself. This can effect our decisions about what we value and the relative importance we place on stimuli.</p>
+
+<p>Caffeine has been demonstrated as being able to increase focus on a set of stimuli. The problem is that it does so to the exclusion of all other stimuli. So if you want to be a focused thinker caffeine can help. But if you want to problem solve using other forms of stimuli which heretofore you have placed little value, caffeine may indeed be standing in your way.</p>
+
+<p>Researchers at McMaster University in Hamilton examined the role of caffeine in the body and discovered that consumption of caffeine releases calcium into the blood stream. The calcium resulted in the increase in performance in athletes, the researchers studied runners. So I read that and wondered what would happen if I consumed calcium? I don't consume caffeine anyway but I wondered about the effect of calcium. I haven't been able to find any studies on the alertness factor of a calcium enhanced diet so you'll have to make do with my personal experience.</p>
+
+<p>I found that I became more alert after I consumed food with calcium in it. I personally like sesame seeds for that but there is calcium in almonds, blackstrap molasses, brewer's yeast, broccoli, cabbage, greens, nuts, grains, dairy, sardines and salmon bones.</p>
+
+<p>Since the consumption of caffeine creates an aclimatizing effect on those people who drink it often I am not sure if people who drink a lot of caffeine would feel the same effect as I do when the consume calcium rich foods.</p>
+
+<p>Nutrients: Oxygen, Essential Fatty Acids, Sodium, Potassium</p>
+
+<p>Essential Fatty Acids: seeds and nuts, flax seeds, hemp seedsl, borage oil, almonds, sesame seeds, fish oils</p>
+
+<p>Sodium: virtually all foods contain some sodium. The balance with potassium is the most important thing so most people need more potassium.</p>
+
+<p>Potassium: apricots, avocados, bananas, lima beans, blackstrap molasses, brewer's yeast, brown rice, dates and dulse.</p>
+
+<h3>Bones - osteoblasts & osteoclasts</h3>
+
+<p>What is the long term effect on bone formation?<br />
+osteoblasts, osteocytes & osteoclasts - break down bone and built bone, Although osteocytes have reduced synthetic activity and, like osteoblasts are not capable of mitotic division, they are actively involved in the routine turnover of bony matrix, through various mechanosensory mechanisms. They destroy bone through a rapid, transient (relative to osteoclasts) mechanism called osteocytic osteolysis.</p>
+
+<p>hydroxylapatite - Seventy percent of bone is made up of the inorganic mineral hydroxylapatite. Carbonated-calcium deficient hydroxylapatite is the main mineral of which dental enamel and dentin are comprised.</p>
+
+<p>Osteocytes, with their distribution throughout the bone matrix and their high degree of interconnectivity, are ideally positioned within the bone matrix to sense mechanical strain and translate that strain into biochemical signals of resorption or formation related to the intensity and distribution of the strain signals</p>
+
+<p>Nutrients: calcium, Vitamin D</p>
+
+<p>As I said previously, there is calcium in almonds, blackstrap molasses, brewer's yeast, broccoli, cabbage, greens, nuts, grains, dairy, sardines and salmon bones.</p>
+
+<p>Vitamin D is formed in the body when skin is exposed to sunlight. From my own experience there may be a few of you who could stand some Vitamin D enrichment in your diet even in the summer time. Vitamin D is found in: butter, cod liver oil, dandelion greens, egg yolks, halibut, liver, milk, oatmeal, salmon, sardines, sweet potatos, tuna & vegetable oils.</p>
+
+<p>Our body tissues are undergoing constant rewritting, constant deployment and constant versions. Just like co-workers, the more we give the tissues what they need, they better they are able to do their job.</p>
+
+</div>
+                      </div>
+                    </div>
+                  </div>
+                  <b class="rbottom">
+                    <b class="r5"></b><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b>
+                  </b>
+                </div>
+              </div>
+              <b class="rbottom">
+                <b class="r5_w2"></b><b class="r4_w2"></b><b class="r3_w2"></b><b class="r2_w2"></b><b class="r1_w2"></b>
+              </b>
+            </div>
+          </div>
+        <b class="rbottom">
+          <b class="r5_w3"></b><b class="r4_w3"></b><b class="r3_w3"></b><b class="r2_w3"></b><b class="r1_w3"></b>
+        </b>
+      </div>
+  </body>
+<html>
