@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Lightbox Example</title>
+    <meta name="author" content="Anita Kuno" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheets/lightbox.css" type="text/css" />
+    <link rel="icon" href="images/favicon.png" />
+    <!--[if IE]>
+      <style type="text/css">
+      html {overflow-y: auto;}
+      #lightboxes .ie-bg {background: #000; position: absolute; width: 100%; height: 3000px; filter: alpha(opacity=75); top: 0; left: 0;}
+      #lightboxes {position: relative; overflow: hidden;}
+      </style>
+    <![endif]-->
+  </head>
+<body>
+
+<div id="container">
+    <div id="header">
+        <h1>A valid XHTML and CSS Lightbox (no JavaScript)</h1>
+        <p><strong>by Jenna Smith</strong></p>
+    </div>
+    <div id="content">
+        <h2>Click any of the links below to see it in action</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur <a href="#lightbox-about">about us</a> adipiscing elit.
+        Donec massa lorem, elementum et mollis non, viverra a est. Proin nunc orci, tristique at egestas et,
+        interdum ac ipsum. Nulla <a href="#lightbox-more">more info</a> vulputate erat ac gravida. Mauris facilisis, leo ac condimentum commodo,
+        justo eros molestie dolor, a posuere orci tortor sed lacus. Suspendisse dictum, magna eu posuere tempor,
+        augue diam tempor lacus, sed hendrerit nulla ante quis justo. Aliquam eget tellus risus.</p>
+    </div>
+    <div id="footer">
+    	<p>Copyright 2009 Jenna Smith</p>
+    </div>
+</div>
+
+<ul id="lightboxes">
+    <li id="close"></li>
+    <li id="lightbox-about">
+        <div class="box">
+          <a href="#close" class="close" title="close window">x</a>
+            <h3>About</h3>
+            <p>
+                Duis eros nibh, tempor sed ultricies eget, malesuada id nunc. Praesent a purus non
+                risus dignissim placerat et eu dolor. Maecenas rutrum odio vitae libero sagittis a faucibus metus tincidunt.
+                Praesent bibendum sagittis elit, nec convallis enim tincidunt quis.
+            </p>
+            <p>
+                Duis eros nibh, tempor sed ultricies eget, malesuada id nunc. Praesent a purus non
+                risus dignissim placerat et eu dolor. Maecenas rutrum odio vitae libero sagittis a faucibus metus tincidunt.
+                Praesent bibendum sagittis elit, nec convallis enim tincidunt quis.
+            </p>
+        </div>
+        <!--[if IE]>
+          <div class="ie-bg"></div>
+        <![endif]-->
+    </li>
+    <li id="lightbox-more">
+        <div class="box">
+          <a href="#close" class="close" title="close window">x</a>
+            <h3>More stuff</h3>
+            <p>
+                Duis eros nibh, tempor sed ultricies eget, malesuada id nunc. Praesent a purus non
+                risus dignissim placerat et eu dolor. Maecenas rutrum odio vitae libero sagittis a faucibus metus tincidunt.
+                Praesent bibendum sagittis elit, nec convallis enim tincidunt quis.
+            </p>
+        </div>
+        <!--[if IE]>
+          <div class="ie-bg"></div>
+        <![endif]-->
+    </li>
+</ul>
+
+</body>
+</html>

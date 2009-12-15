@@ -1,0 +1,124 @@
+html {
+	font-size: 		75%;
+} 
+
+html, body {
+	height: 		100%;
+	width: 			100%;
+	margin: 		0;
+	padding: 		0;
+}
+
+body {
+	font-family: 		arial, helvetica, sans-serif;
+	color: 			#777;
+	text-align: 		center;
+	font-size: 		1.0833em;
+	line-height: 		1.6923em;
+}
+
+a {
+	color: 			#09F;
+}
+
+h2 {
+	font-weight: 		normal;
+}
+
+p {
+	margin: 		0 0 1.6923em 0;
+}        
+
+#container {
+	width: 			100%;
+	height: 		100%;
+	position: 		absolute;
+	top: 			0;
+	left: 			0;
+	overflow:		auto;
+}
+
+#header, #content, #footer {
+	text-align: 		left;
+	width: 			870px;
+	margin: 		0 auto;
+	padding: 		40px;
+}
+
+#header, #footer {
+	background-color: 	#eee;
+}
+
+#header h1 {
+	margin: 		0;
+}
+
+#header p {
+	margin: 		5px 0 0;
+}
+
+#content {
+	background-color: 	#fff;
+}
+
+/* ---------------------------------------------------------- */
+/* LIGHTBOXES
+/* ---------------------------------------------------------- */
+
+#lightboxes {
+	width: 			100%;
+	height: 		100%;
+	margin: 		0;
+	padding: 		0;
+	list-style-type: 	none;
+	text-align: 		left;
+	overflow: 		auto;
+}
+
+#lightboxes li {
+	width: 			100%;
+	height: 		3000px;
+	position: 		relative;
+	background: 		rgba(0,0,0,.5);
+}
+
+#lightboxes .box {
+	width: 			400px;
+	height: 		400px;
+	margin:			0 auto;
+	top: 			50px;
+	border: 		10px solid #999;
+	background-color: 	#fff;
+	padding: 		20px;
+	position: 		relative;
+	z-index:		1;
+}
+
+#lightboxes h3 {
+	font-weight: 		normal;
+	font-size: 		1.8461em;
+	margin: 		0 0 0.4583em 0;
+}
+
+#lightboxes a.close {
+	float:			right;
+	display: 		block;
+	width: 			20px;
+	line-height: 		20px;
+	text-align: 		center;
+	background-color: 	#ddd;
+	text-decoration: 	none;
+	font-weight: 		bold;
+	color: 			#999;
+	font-size: 		1.2em;
+}
+
+#lightboxes a.close:hover {
+	background-color: 	#999;
+	color: 			#fff;
+}
+
+#lightboxes #close {
+	background-color: 	transparent;
+	z-index: 		-1;
+}
