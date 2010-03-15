@@ -12,6 +12,8 @@
       <li><a href="http://www.railsupgradehandbook.com/">Rails3 Upgrade Handbook</a></li>
       <li><a href="http://omgbloglol.com/">Jeremy McAnally's Blog</a></li>
       <li><a href="http://lindsaar.net/">Mikel Lindsaar's Blog</a></li>
+      <li><a href="http://lindsaar.net/2010/2/6/bundle_me_some_rails">Lindsaar's Bundle Post</a></li>
+      <li><a href="http://github.com/carlhuda/bundler">Bundler Infor</a></li>
     </ul>
   </div>
     <p>rvm use 1.8.7</p>
@@ -19,14 +21,17 @@
     <p>gem install rails3b</p>
     <p>gem install rails --pre</p>
     <p>gem install railties --pre</p>
-    <p>gem install mysql</p>
-    <p>gem install sqlite3-ruby</p>
+    <p>gem install mysql sqlite3-ruby mongrel</p>
     <p>rails app && cd app</p> 
     <p>or</p>
-    <p>mkdir app && cd app && rails application .</p>
+    <p>mkdir app && cd app && rails .</p>
+    <p>vi Gemfile</p>
+    <p>add gem "mongrel"</p>
     <p>bundle check</p>
     <p>bundle install</p>
     <p>list of rails commands: rails -h</p>
-  
+    <p>rake db:create</p>
+    <p>list of rake commands: rake -T</p>
+    <p>bundle exec rails server</p>  
   </body>
 </html>
