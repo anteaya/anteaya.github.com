@@ -1,0 +1,278 @@
+<html>
+  <head>
+    <title>Object Oriented Programming - Tracking Down the Fundamentals</title>
+    <link rel="stylesheet" href="stylesheets/poetry_style.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/OO_style.css" type="text/css" />
+  </head>
+  <body>
+
+<h1>Tracking Down the Fundamentals</h1>
+
+<h3>Object Oriented Programming</h3>
+
+<p>I have been wondering what Object Oriented Programming is for some time. Everybody else already seems to know. I have yet to hear a definition that really resonates with me. I have been frustrated by the amount of searching I have done compared to the amount of results I have discovered to date. So when I saw <a href="http://www.loup-vaillant.fr/articles/taboo-oo">this blog post</a>, I was intrigued. I'm not sure if I agree with all of Loup's points (I would need to understand OO before I could have an opinion on it) but I did feel that the sentiments echoed some of my frustration on the topic. So I posted the link on my twitter feed. A conversation resulted, as I hoped it would.</p>
+
+<p>Fortunately for me, the conversation was with a <a href="http://waltonhoops.com/">good friend</a> who knows more than I about OO so <a href="http://twitter.com/Volunder">he</a> took the time to share some of his thoughts. It is kind of a long conversation, but it brought home a valuable understanding for me. I'm going to try more or less sharing the conversation as it happened.</p> 
+
+<p><span class="whoops">whoops: just read your link on OO</span>
+<span class="anteaya">anteaya: what do you think?</span>
+<span class="whoops">whoops: eh interesting, but I don't think the solution is to abolish the term</span>
+<span class="whoops">whoops: OO definitely mean SOMETHING the question is what</span>
+<span class="anteaya">anteaya: good point</span>
+<span class="anteaya">anteaya: I have been searching for the what</span>
+<span class="whoops">whoops: to me OO development means breaking up your code into logical units where data and functionality for any given piece reside together</span>
+<span class="anteaya">anteaya: having a hard time finding it</span>
+<span class="anteaya">anteaya: okay</span>
+<span class="anteaya">anteaya: makes sense</span>
+<span class="whoops">whoops: an OO LANGUAGE on the other hand provides mechanics for doing that as a core feature of the language</span>
+<span class="anteaya">anteaya: difficult arises when someone uses OO to mean something different</span>
+<span class="anteaya">anteaya: their version of OO</span>
+<span class="whoops">whoops: one can write OO code in C, but C is not an OO language</span>
+<span class="anteaya">anteaya: fair enough</span>
+<span class="whoops">whoops: well I think people keep trying to turn the term into something it is not</span>
+<span class="whoops">whoops: OO stands for Object Oriented... what does that mean? Your code is Oriented around Objects</span>
+<span class="whoops">whoops: and I think an Object is generally accepted to be the encapsulation of code and behavior</span>
+<span class="whoops">whoops: I'm sure you could find someone out there to argue with me on that point, but I really do think that is a widely accepted definition</span>
+<span class="whoops">whoops: the problem as I personally see it, is people have looked at things like C++ and Java implementations of other things like Inheritance and Polymorphism and have somehow decided that that should be part of the definition of OO</span>
+<span class="whoops">whoops: rather than one approach to it</span>
+<span class="whoops">whoops: in that way, most of these peoples definitions of OO are correct in that they are techniques for achieving this OO design</span>
+<span class="whoops">whoops: does that seem reasonable or like just another person pushing his definition of OO? :-P</span>
+<span class="anteaya">anteaya: I like your definition</span>
+<span class="anteaya">anteaya: since I know what an object is</span>
+<span class="anteaya">anteaya: so I can relate to your definition</span>
+<span class="anteaya">anteaya: I don't have a clear understanding of inheritance</span>
+<span class="anteaya">anteaya: or of polymorphism</span>
+<span class="anteaya">anteaya: I have seen some examples but that doesn't mean I have a clear understanding</span>
+<span class="anteaya">anteaya: and I think that when something is popular</span>
+<span class="anteaya">anteaya: people like to jump on the bandwagon</span>
+<span class="anteaya">anteaya: and add features</span>
+<span class="whoops">whoops: soft definition: inheritance is a 'is a' relationship</span>
+<span class="anteaya">anteaya: whereas, I tend to like things very simple</span>
+<span class="whoops">whoops: for example a truck 'is a' car</span>
+<span class="anteaya">anteaya: so that I can understand the essence of them</span>
+<span class="whoops">whoops: you can do car.drive, so you can do truck.drive</span>
+<span class="whoops">whoops: however, you can also do truck.tow</span>
+<span class="whoops">whoops: make some sense?</span>
+<span class="anteaya">anteaya: yes</span>
+<span class="anteaya">anteaya: 'cept I would go with a car 'is a' vehicle</span>
+<span class="anteaya">anteaya: and a truck 'is a' vehicle</span>
+<span class="whoops">whoops: fair enough, works, probably more accurate</span>
+<span class="anteaya">anteaya: k</span>
+<span class="anteaya">anteaya: so vehicle.drive</span>
+<span class="anteaya">anteaya: works for both</span>
+<span class="anteaya">anteaya: but only truck can do truck.tow</span>
+<span class="whoops">whoops: polymorphism just says that because I know both truck and car are vehicles, I can use both of them where I expect a vechicle</span>
+<span class="anteaya">anteaya: 'both' or 'either'</span>
+<span class="whoops">whoops: so given a car or a truck I can drive it</span>
+<span class="whoops">whoops: either :-P, I will likely be horribly confused by a caruck</span>
+<span class="anteaya">anteaya: ahahahaha</span>
+<span class="whoops">whoops: make sense? should I show you some code?</span>
+<span class="anteaya">anteaya: sorry, feeling precise today</span>
+<span class="anteaya">anteaya: it does make sense</span>
+<span class="anteaya">anteaya: and I never turn down the opportunity to see some code</span></p>
+
+<p>And so we see the code.</p>
+
+<script src="https://gist.github.com/794198.js?file=output%201"></script>
+<script src="https://gist.github.com/794198.js?file=vehicle_1.rb"></script>
+
+<span class="whoops">whoops: ok now the test: tell me </span>
+<span class="whoops">whoops: how I'm using inheritance and polymorphism</span>
+<span class="anteaya">anteaya: "Cruisin in my #{self.class}"</span>
+<span class="anteaya">anteaya: hahahaha</span>
+<span class="anteaya">anteaya: love it</span>
+<span class="anteaya">anteaya: I want a t-shirt with that on it</span>
+<span class="anteaya">anteaya: hahahaha</span>
+<span class="anteaya">anteaya: and that may indeed be part of the answer to your question</span>
+<span class="anteaya">anteaya: let me take a moment</span>
+<span class="anteaya">anteaya: I would like to seperate inheritance from polymorphism</span>
+<span class="anteaya">anteaya: I'd like to deal with inheritance first</span>
+<span class="anteaya">anteaya: let's start off with the drive method first</span>
+<span class="whoops">whoops: are you saying you want new examples? Or just what you want to start with?</span>
+<span class="anteaya">anteaya: no no</span>
+<span class="anteaya">anteaya: stand by</span>
+<span class="anteaya">anteaya: this is me thinking out loud</span>
+<span class="anteaya">anteaya: I am answering your question</span>
+<span class="anteaya">anteaya: and I love the code you have created</span>
+<span class="anteaya">anteaya: so the drive method is defined in the Vehicle class</span></p>
+
+<script src="https://gist.github.com/794198.js?file=Vehicle%23drive"></script>
+
+<p><span class="anteaya">anteaya: and called by the drive_vehicle method, which is a method without a class</span></p>
+
+<script src="https://gist.github.com/794198.js?file=Object%23drive_vehicle"></script>
+
+<p><span class="anteaya">anteaya: what is a method without a class called again?</span>
+<span class="whoops">whoops: dirty little secret, there is no such thing in ruby</span>
+<span class="anteaya">anteaya: there is no such thing as what in ruby?</span>
+<span class="whoops">whoops: but I would call it a standalone method</span>
+<span class="anteaya">anteaya: so on line 16 would you concur that the drive_vehicle method is a standalone method?</span>
+<span class="anteaya">anteaya: if not, what is the better way to understand it?</span>
+<span class="whoops">whoops: >irb</span>
+<span class="whoops">whoops: > def foo</span>
+<span class="whoops">whoops: > puts "foo"</span>
+<span class="whoops">whoops: > end</span>
+<span class="whoops">whoops: => nil</span>
+<span class="whoops">whoops: > Object.new.send(:foo)</span>
+<span class="whoops">whoops: foo</span>
+<span class="whoops">whoops: => nil</span>
+<span class="whoops">whoops: > Object.new.private_methods.sort</span>
+<span class="whoops">whoops: => [:Array, :Complex, :Float, :Integer, :Rational, :String, :__callee__, :__method__, :`, :abort, :at_exit, :autoload, :autoload?, :binding, :block_given?, :caller, :catch, :default_src_encoding, :eval, :exec, :exit, :exit!, :fail, :foo, :fork, :format, :gem, :gem_original_require, :gets, :global_variables, :initialize, :initialize_copy, :irb_binding, :iterator?, :lambda, :load, :local_variables, :loop, :method_missing, :open, :p, :print, :printf, :proc, :putc, :puts, :raise, :rand, :readline, :readlines, :remove_instance_variable, :require, :require_relative, :select, :set_trace_func, :singleton_method_added, :singleton_method_removed, :singleton_method_undefined, :sleep, :spawn, :sprintf, :srand, :syscall, :system, :test, :throw, :trace_var, :trap, :untrace_var, :warn]</span>
+<span class="whoops">whoops: ></span>
+<span class="whoops">whoops: yeah just consider it a stand alone method</span>
+<span class="whoops">whoops: but as the above example demonstrates, it's actually defined as a private method on Object</span>
+<span class="anteaya">anteaya: cool</span>
+<span class="anteaya">anteaya: okay so</span>
+<span class="anteaya">anteaya: the drive method is defined in the Vehicle class and called in the (standalone || private method on Object) method on line 16</span>
+
+<script src="https://gist.github.com/794198.js?file=Vehicle%23drive"></script>
+<script src="https://gist.github.com/794198.js?file=Object%23drive_vehicle"></script>
+
+<span class="anteaya">anteaya: yes?</span>
+<span class="whoops">whoops: yes</span>
+<span class="anteaya">anteaya: and when drive_vehicle is defined, it is defined with an argument</span>
+<span class="anteaya">anteaya: the argument is the value of self.class</span>
+<span class="anteaya">anteaya: yes?</span>
+<span class="anteaya">anteaya: or hang on</span>
+<span class="anteaya">anteaya: the argument is given when drive_vehicle is called</span>
+<span class="anteaya">anteaya: once with Car.new</span>
+<span class="anteaya">anteaya: once with Truck.new</span></p>
+
+<script src="https://gist.github.com/794198.js?file=call%20drive_vehicle"></script>
+
+<p><span class="anteaya">anteaya: so when drive_vehicle is called with Car.new as an argument</span>
+<span class="anteaya">anteaya: the drive method is called on the new car object, which responds with the value car to the string interpolation self.class</span></p>
+
+<script src="https://gist.github.com/794198.js?file=responds%20to%20the%20call%20to%20drive"></script>
+
+<p><span class="anteaya">anteaya: correct?</span>
+<span class="whoops">whoops: yes, self.class there is evaluating to 'Car'</span>
+<span class="anteaya">anteaya: so far so good</span>
+<span class="anteaya">anteaya: thank you, yes capitalized Car</span></p>
+
+<script src="https://gist.github.com/794198.js?file=output%201%20snippet"></script>
+
+<p><span class="anteaya">anteaya: and the same for truck</span>
+<span class="anteaya">anteaya: so I do believe that covers off inheritance then, does it not?</span>
+<span class="anteaya">anteaya: is the rest of the discussion polymorphism then?</span>
+<span class="whoops">whoops: well you've certainly covered the inheritance, but you haven't told me what it IS</span>
+<span class="whoops">whoops: what, in this example, is being inherited?</span>
+<span class="anteaya">anteaya: okay, what inheritance is</span>
+<span class="anteaya">anteaya: what is being inherited</span>
+<span class="anteaya">anteaya: quite right, I haven't, have I</span>
+<span class="anteaya">anteaya: here goes</span>
+<span class="anteaya">anteaya: the drive method is being inherited by both the Car class and the Truck class since when they are defined (on line 7 and on line 10 respectively) both classes inherit from the Vehicle class as evidenced by the '< Vehicle' code</span></p>
+
+<script src="https://gist.github.com/794198.js?file=definition%20of%20inheritance.rb"></script>
+
+<p><span class="whoops">whoops: 100% correct, so even though they didn't define it, they 'inherited' it from their parent</span>
+<span class="anteaya">anteaya: but they inherited when they are defined yes?</span>
+<span class="anteaya">anteaya: cool</span>
+<span class="anteaya">anteaya: so that is inheritance</span>
+<span class="whoops">whoops: that is inheritance</span>
+<span class="anteaya">anteaya: any more on this topic or moving onto polymorphism?</span>
+<span class="whoops">whoops: if you want to think about it in a real world sense, think about a kid with rich parents</span>
+<span class="anteaya">anteaya: okay</span>
+<span class="whoops">whoops: he offs his parent so he gets all their stuff</span>
+<span class="whoops">whoops: inheritence</span>
+<span class="anteaya">anteaya: nice kid</span>
+<span class="anteaya">anteaya: okay</span>
+<span class="whoops">whoops: thankfully, in computers, you don't have to murder your parent first</span>
+<span class="anteaya">anteaya: thankfully</span>
+<span class="anteaya">anteaya: you can also inherit their eye colour</span>
+<span class="anteaya">anteaya: and they don't have to be dead for that either</span>
+<span class="anteaya">anteaya: going to get a glass of water</span>
+<span class="whoops">whoops: hmph... my example is more fun, but I suppose yours is again more accurate</span>
+<span class="anteaya">anteaya: I'm the sstick in the mud to be sure</span>
+<span class="anteaya">anteaya: got dinner started too</span>
+<span class="anteaya">anteaya: so polymorphism</span>
+<span class="anteaya">anteaya: can you share a definition of polymorphism with me please?</span>
+<span class="whoops">whoops: sorry got called away</span>
+<span class="whoops">whoops: so polymorphism... the wikipedia definition isn't bad if you like reading geek:</span>
+<span class="whoops">whoops: <a href="http://en.wikipedia.org/wiki/Type_polymorphism">http://en.wikipedia.org/wiki/Type_polymorphism</a></span>
+<span class="whoops">whoops: but basically, if I have to classes A and B, and I know their interfaces (the functions you can call on them) are identical you can use A where you expect B or B where you expect A</span>
+<span class="whoops">whoops: duck typing is a form of polymorphism.  I don't care what class something is, just what I can do with it</span>
+<span class="anteaya">anteaya: hmmmm</span>
+<span class="anteaya">anteaya: okay, I'm not yet clear on where the code that you wrote exhibits polymorphism but let me take a stab at it</span>
+<span class="anteaya">anteaya: I'll go with line 12</span></p>
+
+<script src="https://gist.github.com/794347.js?file=line%2012"></script>
+
+<p><span class="anteaya">anteaya: target.class</span>
+<span class="whoops">whoops: negative</span>
+<span class="anteaya">anteaya: could work with Car, could work with Truck</span>
+<span class="anteaya">anteaya: hmmmm</span>
+<span class="whoops">whoops: actually, correct</span>
+<span class="anteaya">anteaya: oh okay</span>
+<span class="whoops">whoops: that's not where I intended to, but that is an example</span>
+<span class="anteaya">anteaya: and how about line 17?</span></p>
+
+<script src="https://gist.github.com/794347.js?file=line%2017"></script>
+
+<p><span class="whoops">whoops: thats the one I was looking for</span>
+<span class="anteaya">anteaya: and would line 3 be an example as well?</span></p>
+
+<script src="https://gist.github.com/794198.js?file=responds%20to%20the%20call%20to%20drive"></script>
+
+<p><span class="whoops">whoops: yes</span>
+<span class="anteaya">anteaya: okay</span>
+<span class="anteaya">anteaya: so inheritance and polymorphism can often show up together?</span>
+<span class="anteaya">anteaya: yes?</span>
+<span class="whoops">whoops: yes, in fact some languages like Java can only have Polymorphism through inheritence</span>
+<span class="whoops">whoops: ruby however, does not</span>
+<span class="whoops">whoops: for example, line 17 would work with an instance of Cattle, despite the fact that Cattle is clearly not a vehicle</span></p>
+
+<script src="https://gist.github.com/794347.js?file=line%2017"></script>
+
+<p><span class="whoops">whoops: so long as you implemented a Cattle#drive method</span>
+<span class="anteaya">anteaya: ah interesting</span>
+<span class="anteaya">anteaya: so it would look for the method on the class that was passed as the argument</span></p>
+
+<script src="https://gist.github.com/794198.js?file=Object%23drive_vehicle"></script>
+
+
+<p><span class="whoops">whoops: right, whatever you pass in, it's going to try to find a method drive to call on it</span>
+<span class="anteaya">anteaya: this may be the first time I have seen a class as an argument</span>
+<span class="whoops">whoops: uh, a class isn't the argument, though it could be</span>
+<span class="whoops">whoops: I passed in Car.new, meaning, make me a car</span></p>
+
+<script src="https://gist.github.com/794198.js?file=call%20drive_vehicle"></script>
+
+<p><span class="anteaya">anteaya: so a new instance of a class is the argument?</span>
+<span class="whoops">whoops: right</span>
+<span class="whoops">whoops: now mind you I could define cattle as:</span>
+<span class="whoops">whoops: class Cattle</span>
+<span class="whoops">whoops: def self.drive</span>
+<span class="whoops">whoops: puts "get a long little doggie!"</span>
+<span class="whoops">whoops: end</span>
+<span class="whoops">whoops: end</span>
+<span class="whoops">whoops: in which case I could call drive_vehicle(Cattle)</span>
+<span class="anteaya">anteaya: can we see that?</span>
+<span class="whoops">whoops: I thought you just did :-P</span>
+<span class="anteaya">anteaya: can you edit the gist to include that?</span></p>
+
+<script src="https://gist.github.com/794198.js?file=output%202"></script>
+<script src="https://gist.github.com/794198.js?file=vehicle_2.rb"></script>
+
+<p><span class="anteaya">anteaya: cool thanks</span>
+<span class="anteaya">anteaya: and your definition of the drive method on Cattle is a class method</span></p>
+
+<script src="https://gist.github.com/794347.js?file=drive%20as%20a%20class%20method"></script>
+
+
+<p><span class="anteaya">anteaya: allowing the Cattle class to be passed in as an argument on line 28</span></p>
+
+<script src="https://gist.github.com/794347.js?file=Cattle%20class%20passed%20in%20as%20argument"></script>
+
+<p><span class="anteaya">anteaya: yes?</span>
+<span class="whoops">whoops: yes</span>
+<span class="anteaya">anteaya: yay</span>
+<span class="anteaya">anteaya: so now I see a class passed in as an argument</span>
+<span class="anteaya">anteaya: very very cool</span>
+<span class="anteaya">anteaya: thanks</span>
+<span class="anteaya">anteaya: I am understanding inheritance and polymorphism</span>
+<span class="anteaya">anteaya: :D</span>
+<span class="whoops">whoops: well of course you are! I am an awesome teacher!</span>
+
+</body>
+</html>
