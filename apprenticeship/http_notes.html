@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../stylesheets/poetry_style.css" type="text/css" />
+    <title>HTTP: IP & Sockets</title>
+  </head>
+  <body>
+
+    <h1>IP & Sockets</h1>
+
+    <div class="sidenote">Collections of thoughts from a software apprentice.
+      <ul>
+        <li><a href="../index.html">Home<a></li>
+        <li><a href="some_thoughts_about_computing.html">Some Thoughts About Computing</a></li>
+      </ul>
+    </div>
+
+    <p>In my conversations with various web developers, there is consistent agreement that a web developer has to have a solid understanding of HTTP in order to work effectively. Unfortunately opportunities to learn about the nature and meaning of HTTP are currently found wanting, if the Googlez are being true to me. While the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">RFC</a> is readily available, its accessibility to a newcomer is questionable. So back to bugging my friends for some details and analogies.</p>
+
+    <p>HTTP is a protocol that operates on top of some other protocols. It is a convention that relies on some other conventions that form a structure for information to be transported from point A to point B. Often when the transport commences, point B is unknown. Locating the final destination is addressed by the IP layer (oh my, was that a pun?). Then the information needs to be packaged up, sent and unpackaged. That is the UDP layer. If the sequence of information is important to the integrity of the message, the TCP layer takes care of ensuring the proper sequence. The action of transportation is the result of sockets. Sockets are responsible for segmenting, labelling, transporting, and reassembling the data. HTTP operates on top of these layers and sockets. To understand HTTP, I first need to understand the foundation underneath.</p>
+
+    <h2>IP layer</h2>
+
+    <p>IP stands for Internet Protocol. It is a phone number for a computer. Domain names correspond to various phone numbers for the servers that host a given website. IP also involves a routing protocol. An individual computer sending information to a server via the internet has to go through an ISP (internet service provider) to complete the connection. The ISP router determines the route the information travels. Like a dispatch operator, when the information comes into the ISP router, the router decides how it will get into the traffic flow so that it can arrive at its destination.</p>
+
+    <h2>Sockets</h2>
+
+    <p>Now sockets have troubled me for some time. I have heard about them and read about them and didn't have a concept of them in my mind. I have been thinking sockets as in electrical sockets or sockets as in a socket wrench. I now understand that a socket is an abstraction. That explains why my mind couldn't grasp hold of it previously. While a simple concept, it took me a bit of discussion to get an understanding.</p>
+
+    <p>A socket doesn't exist, it is just an abstraction. A socket is something you can stream data to or from.</p>
+
+    <p>A file is a socket as soon as it has read/write permissions on it, since this allows information fo be streamed to or from it. Stdin/stdout/stderr are all sockets.</p>
+
+    <p>This took me a while, since as I said I have been picturing outlets and socket sets.</p>
+
+    <p>While I was picturing the socket as a thing, I was told that an electrical socket streams electricity. It can stream electricity from a circuit panel to a lamp. So socket is the qualifier that describes it. You can't buy a Socket, because Socket just describes what a number of different sockets have in common. You can acquire a dog or a cat or a bird or a fish. While all of these are animals, going into a pet store and requesting an animal isn't sufficient to getting what you want.</p>
+
+    <p>Sockets move things. They are devices intended to transfer something. An electrical socket moves electricity from the circuit panel to the lamp. A File (as in the ruby class) moves data from your program to the hard disk. A funnel is a socket. When fluid passes though it is reshaped to facilitate entrance into the desired container. A wind sock is a socket as is a drain in a sink. A conveyor belt is a socket as is an elevator and an escalator. So too, a fuel injector in an engine.</p>
+
+    <p>I spent way too much time on sockets. Apparently they really aren't that special. They just take things from A to B and they work in one or both directions.</p>
+
+    <p>So back to the layers that make up the foundation for HTTP to operate.</p>
+
+    <h2>UDP layer</h2>
+
+    <p><em>By the time I got my head wrapped around sockets, <a href="http://waltonhoops.com/">Walton</a> was on a bit of a roll. So the next two bits are mostly him. I just edited it. I'll get out of the way and let him explain.</em></p>
+
+    <p>UDP is the simplest form of sockets on top of the IP layer. With UDP given a block of information you just break it up into a bunch of packets and send them willy nilly to their destination. The stream of information is segmented into packets by the UDP Sockets. The packets are then sent via IP. At their destination, the receiver's UDP Socket endpoints open the packets and puts them back into stream form.</p>
+
+    <p>We can think of a packet as a cardboard box with an address. The IP layer or IP stack is like the post office, it moves the boxes around. Doesn't know what is in them, doesn't care, just tries to get them where they need to go. The UDP socket layer is responsible for taking the data and boxing it up, affixing a label and taking it to the post office. If packets are received by the address of the originating computer, the UDP sockets unpackage it and put it together in the order they were received.</p>
+
+    <p>If we have a 10 million page book, we clearly can't put it all in one box. So UDP breaks it up into a bunch of 100 page boxes, slaps on a label and sends them out. Once recieved, UDP unpacks them and puts them together in the order they were recieved.</p>
+
+    <h2>TCP</h2>
+
+    <p>Ok, so here's the problem with UDP, like the post office, the IP layer is not perfect. Things get lost, things arrive out of order and (unlike the real post office) things may arrive move than once. So you see the problem?</p>
+
+    <p>This limits where UDP is useful. One place it's commonly used is streaming video because if a single pixel is lost or misplaced, the viewer will never notice. But in our example, your book is now a convoluted mess. That brings us to TCP.</p>
+
+    <p>TCP is a streaming protocol implemented on top of UDP. So now inside our boxes, I have placed a title page saying 'box x of y' (where x is the position of the box and y is the number of boxes). As you receive each box you send me back a confirmation letter saying you got it. If I don't get a confirmation letter within a week, I resend the box assuming you didn't get it. In this way we can ensure that the book gets reconstructed on your end in full and in the proper order, but we have done a lot more work to make it happen.</p>
+
+    <p>So UDP is faster, TCP is more precise. UDP is used for video/audio, TCP is used with documents. But the use of these layers for the different media types is not set in stone.</p>
+
+  </body>
+</html>
