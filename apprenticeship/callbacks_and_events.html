@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../stylesheets/poetry_style.css" type="text/css" />
+    <title>Callbacks & Events</title>
+  </head>
+  <body>
+
+    <h1>Callbacks & Events</h1>
+
+    <div class="sidenote">Collections of thoughts from a software apprentice.
+      <ul>
+        <li><a href="../index.html">Home<a></li>
+        <li><a href="some_thoughts_about_computing.html">Some Thoughts About Computing</a></li>
+        <li><a href="http_notes.html">IP & Sockets</a></li>
+      </ul>
+    </div>
+
+<p>I read about callbacks all the time. I don't know what they are. Today I found out. So I thought I would make some notes.</p>
+
+<h2>Callbacks</h2>
+
+<p>One definition of a callback is a thing that should be executed once something else has completed. While that may be accurate, that isn't enough for me to feel I have an understanding of callbacks.</p>
+
+<p>So here was my first kick at the can. If I were to say, "When you are done doing the dishes, put on your hat." Then if I see you with your hat on, I know the dishes are done. So it is like a cue.</p>
+
+<p>While not untrue, that example didn't encompass the entire role of a callback. A callback is usually more productive and is usually related to the task.</p>
+
+
+<p> "When you're done doing the dishes, put them away" was suggested to me. Theoretically I have a problem with that since I consider cleaning the dishes and putting them away to be one task. "Wouldn't 'put them away' be part of the task? It is at my house. How about 'When you are done doing the dishes, take the dirty tea-towel to the laundry.' How about that?"</p>
+
+<p>That might possibly work, but usually a callback involves doing something with what you just produced. So after a bit of back and forth, I came up with, "'When the cookies are baked, put two on a plate and bring them to me with a cup of tea.' How about that?" Apparently that did it. I now have an understanding of callbacks.</p>
+
+<h2>Callbacks with Events</h2>
+
+<p>Programming around these callbacks uses the <a href="http://en.wikipedia.org/wiki/Reactor_pattern">reactor pattern</a>, otherwise known as evented programming. Your program is a bunch of events and callbacks. So in IRC, when a user connects, do X; when a user sends a message, send that message to all the other users; when a user sends a whisper, send that message to its target. The program doesn't actively DO anything, instead it waits for events to occur and executes the appropriate callback (i.e. it reacts).</p>
+
+<p>In the above example, you could say that an event triggers a callback and the callback executed depends upon the type of event that occurred. When the laundry dryer finishes you don't put away the dishes. When the dryer finishes (event) you fold the laundry (callback). When you are done washing the dishes (event) you hang up the dish cloth (callback). When the dishes are dry (event) you put them away (callback). So this is the reactor pattern: when (event) then (callback).</p>
+
+<h2>Evented Programming</h2>
+
+<p>EventMachine and cool.io are two separate libraries that deal with evented programming, both target asynchronous (background) IO. To be clear, this has nothing to do with HTTP unless some of your events or callbacks invoke HTTP. Both EventMachine and cool.io are geared toward IO operations. What would be considered IO operations? While keyboard presses and mouse movements are input and displaying to a viewport and writing to a file are IO, in the case of evented programming we are usually talking about file read operations or the activation of TCP sockets.</p>
+
+<p>TCP sockets mean you are sending or receiving over the internet. Based on a previous post on <a href="http_notes.html">IP & Sockets</a>, I understood that one. However my first examples of file read operations didn't capture the importance of evented programming. While opening a file in a text editor is an example of a file read operation, the power of evented programming is the ability to do something else while the event is running. Opening a file in a text editor doesn't require evented programming. But loading the environment in a video game does. When the character moves into new territory, the program needs to read a tree from the disk, but the game continues while the tree is being read. Then when the tree is finished being read (event) it is drawn to the screen (callback).</p>
+
+<p>Evented IO is extremely common in web programming. If a request is made to a server, the server needs to generate a response. The sending of the response usually takes much longer than actually generating it. Using evented IO, the sending of the response can be triggered and the server can move on to servicing a different request, instead of being stuck waiting for the send to complete.</p>
+
+<p>The code listening for the events and executing the callbacks runs on the server not the client. Request received (event) -> prepare response (callback). Response sent (event) -> cleanup (callback).</p>
+
+<p> There is such a thing as non-evented IO. Synchronous IO isn't evented. If I do File.read('foo.txt') nothing happens until foo.txt has been completely read. Asynchronous IO can be evented or not-evented. Synchronous means the program blocks (i.e. waits) for the read to complete.  It does not do anything while it's waiting. Asynchronous means an event is started and then the program moves on, it doesn't wait for the completion of the event. Once the event is completed, if the program is evented, a callback is triggered. If the asynchronous IO is not-evented, the program triggers the event and moves on and later (perhaps after a given time) it comes back and collects the result.</p>
+
+  </body>
+</html>
