@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../stylesheets/poetry_style.css" type="text/css" />
+    <title>Closure</title>
+  </head>
+  <body>
+
+    <h1>A Closure in a Closure in a Closure</h1>
+
+    <div class="sidenote">Collections of thoughts from a software apprentice.
+      <ul>
+        <li><a href="../index.html">Home<a></li>
+        <li><a href="some_thoughts_about_computing.html">Some Thoughts About Computing</a></li>
+        <li><a href="http_notes.html">IP & Sockets</a></li>
+        <li><a href="callbacks_and_events.html">Callbacks & Events</a></li>
+        <li><a href="core_and_runtime.html">Core & Runtime</a></li>
+        <li><a href="apprenticeship_thoughts.html">Apprenticeship Thoughts</a></li>
+      </ul>
+    </div>
+
+    <p>So I'm a big Star Trek fan. Of the original Star Trek, the Star Trek where Kirk and Spock duck behind foam rocks in their pyjamas original Star Trek.</p>
+    
+    <iframe width="480" height="390" src="http://www.youtube.com/embed/Z1eFdUSnaQM?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <p>Well Spock wasn't in that one but how about those bouncing rocks?</p>
+    
+    <p>But the original Star Trek doesn't have something that The Next Generation does, the holodeck. It is the holodeck that I want to discuss. I just had to work Kirk into the conversation, thanks for indulging me.</p>
+
+    <p>So Star Trek TNG, which I will henceforth call Star Trek, has a holodeck.</p>
+    
+    <iframe width="480" height="390" src="http://www.youtube.com/embed/P9RGZxjORF0?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <p>Okay, so maybe that wasn't it.</p>
+    
+    <p>The holodeck has some interesting properties. It can run. It can freeze and it can be saved. A given holodeck program can have characters. The characters have knowledge of their surroundings. But these characters have no inherent knowledge of the holodeck (encapsulation). A program can have objects. Sometimes it feels like the holodeck is an excuse to have guns and swords on the show since phasers don't seem to have the same cachet as guns, but a holodeck program can have guns if the environment in the program allows it.</p>
+    
+    <iframe width="480" height="390" src="http://www.youtube.com/embed/ZzxasZ0ZgJs?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <p>This environment has guns.</p>
+
+    <p>So let's say I'm a crew member on the Enterprise and I load a program and step into the holodeck. I am surrounded by the environment of the running program. Let's say I want to make a cup of tea. I walk into a kitchen environment, pour water into the kettle, turn the kettle on, and wait for the water to boil. When the kettle has boiled, it shuts off and I make my tea. That is what it looks like but I am interested in what is happening. When I pour water into the kettle, I am altering the state variable associated with water level. When I pass the message boil to the kettle (by turning it on), I am in effect creating a new holodeck program which contains the message boil and the state variable water level and I am passing that to the kettle. So I am creating a holodeck program inside of a holodeck program and I pass it to the kettle to run the program. The kettle knows about the water level and since I filled the kettle prior to creating the new holodeck program the kettle has sufficient water to run the boil program. So it does. The running of the boil program is internal to the kettle. After invoking the program and passing it to the kettle, I can set up the environment for the execution of another program. Let's say I want toast with my tea. I plug in the toaster and load it with bread. The number of slices variable is now set to integer 2. Then I invoke a separate holodeck program with the message toast which knows about the state variable number of slices and I pass it to the toaster. The toaster then evaluates its conditions for running the program and since it has sufficient number of slices to execute the program it proceeds.</p>
+
+    <p>So now I am in the holodeck program waiting for the kettle to boil the water and for the toaster to toast the bread. Let's say the boil water program encounters a situation that it doesn't know how to handle and throws an error which opens a debugger. The toaster is still toasting and anything else that is running is still running and the only holodeck that is frozen is the holodeck running inside the kettle trying to execute the boil water program. So in smalltalk, I would interact with the debugger perhaps writing some new code that handles the current environment inside the holodeck running inside of the kettle. The kettle continues to run the program until it completes. That holodeck then vanishes since it is no longer needed.</p>
+
+    <p>So each holodeck has an environment which is unique. The holodeck that I'm in knows about the holodecks running inside of it, but the holodecks running inside of it only know about themselves, their environment and the programs they are trying to execute. That is encapsulation.</p>
+
+    <p>When I create a new holodeck with an environment and pass it to an object for execution, that is a closure. So when I pass a message and an environment to an object to execute a program that matches the method and uses the environment, I pass the object a closure. Creating a holodeck to run in the kettle is creating a closure. The holodeck is the closure. I'm in a closure. The holodeck that I'm in is a closure.</p>
+    
+    <iframe width="480" height="390" src="http://www.youtube.com/embed/7OCKDEdtWys?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <p>Captian Picard has a way with closures, wouldn't ya say?</p>
+
+    <p>This entire investigation started out with a desire to understand closures. I'm really glad I found this paradigm since it appears to be working for me.</p>
+
+    <p>Now I am told that 90% of the time I won't be using closures, which is fine as long as the 10% of the time when I do use them, I use them well.</p>
+
+    <p>One of the really interesting things for me going through the above analogy is the idea of variables and in which environment a given variable exists. In smalltalk, variables are declared when the class is declared. There are a few options: instance variables, class variables, pool dictionaries, and VA smalltalk has class instance variables. As the class is modified the variables declared in each category can be added to the collection or removed from the collection but there is one place to declare them for each class and the categories are specified even if left empty. A variable in the instance variable collection is available to every instance of the class, class variables are available to that class and subclasses and all instances of the class and subclasses, I'm uncertain about pool dictionaries we didn't cover those in our discussion, and class instance variables are variables which are available to the class and its subclasses. Variables carry information about the environment which can hold a value when a closure (holodeck) is created and passed to an object to execute some code.</p>
+
+    <p>I was running into problems in ruby since I was not clear in my variable creation which environment (scope) I was creating it in, so sometimes the variable was unavailable to the closure I created. The closure failed once it was passed to an object since the object couldn't see the state of the environment and couldn't run its program. In ruby, some variables are created in the immediate environment and called local variables (smalltalk calls these temporary variables). Some variables are created in an instance method of an object and are available to all instance methods of the object, these are called instance variables. An example, if I am an instance of the person class, when I was initialized I had an instance variable called name which holds my name. So if I am executing the code to answer the telephone or apply for a membership, I have access to my name instance variable when I run either program. It is the environment in which the variable was declared that defines what environments have access to it in future. Inside my kettle running my boil program, it may have created a temporary variable called temperature to keep track of the water temperature so it knows when it is done. The temporary variable temperature did not exist before the closure was passed to the kettle and it will not exist after the kettle has completed the execution of the program. The temporary variable temperature was not required until boil started running and is not required after boil finishes, it is temporary.</p>
+
+    <p>Ruby has a variable called instance variable that has a specific syntax. I have been mislead by this syntax. This variable is available to all the instances of a class IF it is created inside of an instance method, the initialize method would be a good choice as would an accessor method. If a variable, using the instance variable syntax is created in the body of a class it is not available to the instances of the class but only to the class itself. I did not know this and am glad I know it now. I am currently operating under the belief that the behaviour of an instance variable declared in the body of a class would be similar to a class instance variable in VA smalltalk but time will have to educate me further in that regard.</p>
+
+    <p>I feel that I have covered 90% of what I intended and in the interest of getting this off to be proof read and posted in due course, I must end here and I welcome the opportunity to delve further. My thanks to <a href="http://omasko.wordpress.com/">Thomas Koschate</a> for his patience as I tried on analogies while discussing smalltalk, glad we found the holodeck. Additional thanks to <a href="http://waltonhoops.com/">Walton Hoops</a> for helping me to understand about the instance variable truism in ruby of which I was previously unaware.</p>
+
+    <p>Cheers,<br />
+Anita.</p>
+
+  </body>
+</html>
